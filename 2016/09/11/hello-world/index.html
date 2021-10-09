@@ -11,9 +11,9 @@
   
   <title>
     
-      카테고리 
+      Hello, world! 
       
-       : Hexo
+      
       |
     
      ToolLab
@@ -116,30 +116,139 @@
 
 
       <div class="flex-container">
-        <!-- 标签详情页，展示某个标签下的文章列表，url形式：https://yoursite/tags/某个标签/ -->
+        <!-- 文章详情页，展示文章具体内容，url形式：https://yoursite/文章标题/ -->
+<!-- 同时为「标签tag」，「朋友friend」，「分类categories」，「关于about」页面的承载页面，具体展示取决于page.type -->
 
-<div class="container category-details">
-  <div class="content-title">
-    <h2>
-      <span>Hexo</span>
-    </h2>
-  </div>
+<!-- LaTex Display -->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  }
+};
+</script>
+
+
+
   
-    <div class="post-list">
-      <div class="post-item" title="Hello, world!">
-        <span class="time-m-d">2016-09-11</span>
-        <a href="/2016/09/11/hello-world/">
-          <span>Hello, world!</span>
-        </a>
+
+  
+
+  
+
+  
+  <!-- 文章内容页 url形式：https://yoursite/文章标题/ -->
+  <div class="container post-details" id="post-details">
+    <div class="post-content">
+      <div class="post-title">Hello, world!</div>
+      <div class="post-attach">
+        <span class="post-pubtime">
+          <i class="iconfont icon-updatetime" title="업데이트 시간"></i>
+          2016-09-11 18:03:00
+        </span>
+        
+              <span class="post-categories">
+                <i class="iconfont icon-bookmark" title="카테고리"></i>
+                
+                <span class="span--category">
+                  <a href="/categories/Hexo/" title="Hexo">
+                    <b>#</b> Hexo
+                  </a>
+                </span>
+                
+              </span>
+          
+              <span class="post-tags">
+                <i class="iconfont icon-tags" title="태그"></i>
+                
+                <span class="span--tag">
+                  <a href="/tags/Hexo/" title="Hexo">
+                    <b>#</b> Hexo
+                  </a>
+                </span>
+                
+              </span>
+          
       </div>
+      <div class="markdown-body">
+        <p>hexo 글작성</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new post 포스트명</span><br></pre></td></tr></table></figure>
+
+<p>hexo 정적 생성</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>hexo 배포</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>hexo clean</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br></pre></td></tr></table></figure>
+
+<p>hexo 동시 정적 생성과 배포</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy --generate</span><br></pre></td></tr></table></figure>
+      </div>
+      
+        <div class="prev-or-next">
+          <div class="post-foot-next">
+            
+          </div>
+          <div class="post-attach">
+            <span class="post-pubtime">
+              <i class="iconfont icon-updatetime" title="업데이트 시간"></i>
+              2016-09-11 18:03:00
+            </span>
+            
+                  <span class="post-categories">
+                    <i class="iconfont icon-bookmark" title="카테고리"></i>
+                    
+                    <span class="span--category">
+                      <a href="/categories/Hexo/" title="Hexo">
+                        <b>#</b> Hexo
+                      </a>
+                    </span>
+                    
+                  </span>
+              
+                  <span class="post-tags">
+                    <i class="iconfont icon-tags" title="태그"></i>
+                    
+                    <span class="span--tag">
+                      <a href="/tags/Hexo/" title="Hexo">
+                        <b>#</b> Hexo
+                      </a>
+                    </span>
+                    
+                  </span>
+              
+          </div>
+          <div class="post-foot-prev">
+            
+              <a href="/2016/10/13/arduino-interrupt-tact-switch/" target="_self">
+                <span>다음</span>
+                <i class="iconfont icon-chevronright"></i>
+              </a>
+            
+          </div>
+        </div>
+      
     </div>
-  
-  <nav class="post-navigation">
     
-    <span class="page-num">1 / 1</span>
+
     
-  </nav>
-</div>
+      <div class="comments-container">
+        
+
+
+
+
+
+      </div>
+    
+  </div>
+
 
         <div class="footer">
   <div class="social">
@@ -426,6 +535,24 @@
 
 
         
+  
+    <div class="share-icon tools-bar-item">
+      <a href="javascript: void(0)" id="share-icon">
+        <i class="iconfont iconshare"></i>
+      </a>
+      <div class="share-content hidden">
+        
+          <a class="share-item" href="https://twitter.com/intent/tweet?text=' + Hello%2C%20world! + '&url=' + http%3A%2F%2Fexample.com%2F2016%2F09%2F11%2Fhello-world%2F + '" target="_blank" title="Twitter">
+            <i class="iconfont icon-twitter"></i>
+          </a>
+        
+        
+          <a class="share-item" href="https://www.facebook.com/sharer.php?u=http://example.com/2016/09/11/hello-world/" target="_blank" title="Facebook">
+            <i class="iconfont icon-facebooksquare"></i>
+          </a>
+        
+      </div>
+    </div>
   
   
 <script src="/js/shares.js"></script>

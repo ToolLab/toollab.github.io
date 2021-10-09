@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-10-09T09:01:49.101Z</updated>
+  <updated>2021-10-09T14:34:20.323Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,11 +17,38 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Arduino interrupt tact switch 예제</title>
+    <link href="http://example.com/2016/10/13/arduino-interrupt-tact-switch/"/>
+    <id>http://example.com/2016/10/13/arduino-interrupt-tact-switch/</id>
+    <published>2016-10-13T09:18:23.000Z</published>
+    <updated>2021-10-09T14:34:20.323Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;아두이노 택스 스위치 인터럽트 예제입니다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/arduino-interrupt-tact-switch-01.png&quot; alt=&quot;아두이노&quot; title=&quot;아두이노&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    <category term="Arduino" scheme="http://example.com/categories/Arduino/"/>
+    
+    
+    <category term="Arduino" scheme="http://example.com/tags/Arduino/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Hello, world!</title>
-    <link href="http://example.com/2021/10/01/hello-world/"/>
-    <id>http://example.com/2021/10/01/hello-world/</id>
-    <published>2021-10-01T02:30:09.000Z</published>
-    <updated>2021-10-09T09:01:49.101Z</updated>
+    <link href="http://example.com/2016/09/11/hello-world/"/>
+    <id>http://example.com/2016/09/11/hello-world/</id>
+    <published>2016-09-11T09:03:00.000Z</published>
+    <updated>2021-10-09T14:22:43.778Z</updated>
     
     
       

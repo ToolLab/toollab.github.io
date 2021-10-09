@@ -11,9 +11,9 @@
   
   <title>
     
-      카테고리 
+      Arduino interrupt tact switch 예제 
       
-       : Hexo
+      
       |
     
      ToolLab
@@ -116,30 +116,130 @@
 
 
       <div class="flex-container">
-        <!-- 标签详情页，展示某个标签下的文章列表，url形式：https://yoursite/tags/某个标签/ -->
+        <!-- 文章详情页，展示文章具体内容，url形式：https://yoursite/文章标题/ -->
+<!-- 同时为「标签tag」，「朋友friend」，「分类categories」，「关于about」页面的承载页面，具体展示取决于page.type -->
 
-<div class="container category-details">
-  <div class="content-title">
-    <h2>
-      <span>Hexo</span>
-    </h2>
-  </div>
+<!-- LaTex Display -->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  }
+};
+</script>
+
+
+
   
-    <div class="post-list">
-      <div class="post-item" title="Hello, world!">
-        <span class="time-m-d">2016-09-11</span>
-        <a href="/2016/09/11/hello-world/">
-          <span>Hello, world!</span>
-        </a>
+
+  
+
+  
+
+  
+  <!-- 文章内容页 url形式：https://yoursite/文章标题/ -->
+  <div class="container post-details" id="post-details">
+    <div class="post-content">
+      <div class="post-title">Arduino interrupt tact switch 예제</div>
+      <div class="post-attach">
+        <span class="post-pubtime">
+          <i class="iconfont icon-updatetime" title="업데이트 시간"></i>
+          2016-10-13 18:18:23
+        </span>
+        
+              <span class="post-categories">
+                <i class="iconfont icon-bookmark" title="카테고리"></i>
+                
+                <span class="span--category">
+                  <a href="/categories/Arduino/" title="Arduino">
+                    <b>#</b> Arduino
+                  </a>
+                </span>
+                
+              </span>
+          
+              <span class="post-tags">
+                <i class="iconfont icon-tags" title="태그"></i>
+                
+                <span class="span--tag">
+                  <a href="/tags/Arduino/" title="Arduino">
+                    <b>#</b> Arduino
+                  </a>
+                </span>
+                
+              </span>
+          
       </div>
+      <div class="markdown-body">
+        <p>아두이노 택스 스위치 인터럽트 예제입니다.</p>
+<p><img src="/images/arduino-interrupt-tact-switch-01.png" alt="아두이노" title="아두이노"></p>
+<p><img src="/images/arduino-interrupt-tact-switch-02.png" alt="아두이노" title="아두이노"></p>
+<p><img src="/images/arduino-interrupt-tact-switch-03.png" alt="아두이노" title="아두이노"></p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">volatile</span> <span class="keyword">int</span> buttonState = LOW;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">setup</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">  Serial.begin(<span class="number">9600</span>);</span><br><span class="line">  attachInterrupt(<span class="number">0</span>, showTemperatures, CHANGE);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">loop</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">1000</span>; i++)</span><br><span class="line">  &#123;</span><br><span class="line">    delay(<span class="number">100</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">showTemperatures</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">  buttonState = !buttonState;</span><br><span class="line">  Serial.print(<span class="string">&quot;Button : &quot;</span>);</span><br><span class="line">  Serial.println(buttonState);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      </div>
+      
+        <div class="prev-or-next">
+          <div class="post-foot-next">
+            
+              <a href="/2016/09/11/hello-world/" target="_self">
+                <i class="iconfont icon-chevronleft"></i>
+                <span>이전</span>
+              </a>
+            
+          </div>
+          <div class="post-attach">
+            <span class="post-pubtime">
+              <i class="iconfont icon-updatetime" title="업데이트 시간"></i>
+              2016-10-13 18:18:23
+            </span>
+            
+                  <span class="post-categories">
+                    <i class="iconfont icon-bookmark" title="카테고리"></i>
+                    
+                    <span class="span--category">
+                      <a href="/categories/Arduino/" title="Arduino">
+                        <b>#</b> Arduino
+                      </a>
+                    </span>
+                    
+                  </span>
+              
+                  <span class="post-tags">
+                    <i class="iconfont icon-tags" title="태그"></i>
+                    
+                    <span class="span--tag">
+                      <a href="/tags/Arduino/" title="Arduino">
+                        <b>#</b> Arduino
+                      </a>
+                    </span>
+                    
+                  </span>
+              
+          </div>
+          <div class="post-foot-prev">
+            
+          </div>
+        </div>
+      
     </div>
-  
-  <nav class="post-navigation">
     
-    <span class="page-num">1 / 1</span>
+
     
-  </nav>
-</div>
+      <div class="comments-container">
+        
+
+
+
+
+
+      </div>
+    
+  </div>
+
 
         <div class="footer">
   <div class="social">
@@ -426,6 +526,24 @@
 
 
         
+  
+    <div class="share-icon tools-bar-item">
+      <a href="javascript: void(0)" id="share-icon">
+        <i class="iconfont iconshare"></i>
+      </a>
+      <div class="share-content hidden">
+        
+          <a class="share-item" href="https://twitter.com/intent/tweet?text=' + Arduino%20interrupt%20tact%20switch%20%EC%98%88%EC%A0%9C + '&url=' + http%3A%2F%2Fexample.com%2F2016%2F10%2F13%2Farduino-interrupt-tact-switch%2F + '" target="_blank" title="Twitter">
+            <i class="iconfont icon-twitter"></i>
+          </a>
+        
+        
+          <a class="share-item" href="https://www.facebook.com/sharer.php?u=http://example.com/2016/10/13/arduino-interrupt-tact-switch/" target="_blank" title="Facebook">
+            <i class="iconfont icon-facebooksquare"></i>
+          </a>
+        
+      </div>
+    </div>
   
   
 <script src="/js/shares.js"></script>

@@ -11,9 +11,9 @@
   
   <title>
     
-      카테고리 
+      archive_a: 2016/10 
       
-       : Hexo
+      
       |
     
      ToolLab
@@ -116,29 +116,40 @@
 
 
       <div class="flex-container">
-        <!-- 标签详情页，展示某个标签下的文章列表，url形式：https://yoursite/tags/某个标签/ -->
+        <!-- 归档页，展示本站所有文章，按照年份降序归类，url形式：https://yoursite/archives/ -->
 
-<div class="container category-details">
-  <div class="content-title">
-    <h2>
-      <span>Hexo</span>
-    </h2>
-  </div>
-  
-    <div class="post-list">
-      <div class="post-item" title="Hello, world!">
-        <span class="time-m-d">2016-09-11</span>
-        <a href="/2016/09/11/hello-world/">
-          <span>Hello, world!</span>
-        </a>
+<!-- last: 按年份把文章分组，当前遍历到的年份 -->
+<!-- now: 当前遍历到的文章的发布年份 -->
+
+<div class="container archives">
+  <div class="post-list">
+    
+        <!-- 后续文章的发布年份呈现 -->
+        <div class="content-title">
+          <h2>
+            <span>2016</span>
+          </h2>
+        </div>
+      
+      <div class="post-item" title="Arduino interrupt tact switch 예제">
+        <div class="time-m-d">10-13</div>
+        <div class="title">
+          <a href="/2016/10/13/arduino-interrupt-tact-switch/">
+            <span>Arduino interrupt tact switch 예제</span>
+          </a>
+        </div>
       </div>
-    </div>
-  
-  <nav class="post-navigation">
     
-    <span class="page-num">1 / 1</span>
+      <div class="post-item" title="Hello, world!">
+        <div class="time-m-d">09-11</div>
+        <div class="title">
+          <a href="/2016/09/11/hello-world/">
+            <span>Hello, world!</span>
+          </a>
+        </div>
+      </div>
     
-  </nav>
+  </div>
 </div>
 
         <div class="footer">

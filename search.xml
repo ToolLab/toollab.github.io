@@ -4,9 +4,34 @@
   
     
     <entry>
+      <title>Arduino interrupt tact switch 예제</title>
+      <link href="/2016/10/13/arduino-interrupt-tact-switch/"/>
+      <url>/2016/10/13/arduino-interrupt-tact-switch/</url>
+      
+        <content type="html"><![CDATA[<p>아두이노 택스 스위치 인터럽트 예제입니다.</p><p><img src="/images/arduino-interrupt-tact-switch-01.png" alt="아두이노" title="아두이노"></p><p><img src="/images/arduino-interrupt-tact-switch-02.png" alt="아두이노" title="아두이노"></p><p><img src="/images/arduino-interrupt-tact-switch-03.png" alt="아두이노" title="아두이노"></p><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">volatile</span> <span class="keyword">int</span> buttonState = LOW;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">setup</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">  Serial.begin(<span class="number">9600</span>);</span><br><span class="line">  attachInterrupt(<span class="number">0</span>, showTemperatures, CHANGE);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">loop</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">1000</span>; i++)</span><br><span class="line">  &#123;</span><br><span class="line">    delay(<span class="number">100</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">showTemperatures</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">  buttonState = !buttonState;</span><br><span class="line">  Serial.print(<span class="string">&quot;Button : &quot;</span>);</span><br><span class="line">  Serial.println(buttonState);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> Arduino </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Arduino </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hello, world!</title>
-      <link href="/2021/10/01/hello-world/"/>
-      <url>/2021/10/01/hello-world/</url>
+      <link href="/2016/09/11/hello-world/"/>
+      <url>/2016/09/11/hello-world/</url>
       
         <content type="html"><![CDATA[<p>hexo 글작성</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new post 포스트명</span><br></pre></td></tr></table></figure><p>hexo 정적 생성</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>hexo 배포</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>hexo clean</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br></pre></td></tr></table></figure><p>hexo 동시 정적 생성과 배포</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy --generate</span><br></pre></td></tr></table></figure>]]></content>
       
