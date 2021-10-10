@@ -3,14 +3,14 @@
 
 
     <url>
-        <loc>http://example.com/tags/Arduino/</loc>
+        <loc>https://toollab.github.io/tags/Arduino/</loc>
         <lastmod>2021-10-09T14:34:20.323Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>http://example.com/tags/Hexo/</loc>
+        <loc>https://toollab.github.io/tags/Hexo/</loc>
         <lastmod>2021-10-09T14:22:43.778Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>

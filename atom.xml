@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>ToolLab</title>
-  <icon>http://example.com/icon.png</icon>
+  <icon>https://toollab.github.io/icon.png</icon>
   
-  <link href="http://example.com/atom.xml" rel="self"/>
+  <link href="https://toollab.github.io/atom.xml" rel="self"/>
   
-  <link href="http://example.com/"/>
+  <link href="https://toollab.github.io/"/>
   <updated>2021-10-09T14:34:20.323Z</updated>
-  <id>http://example.com/</id>
+  <id>https://toollab.github.io/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>YHG</name>
     
   </author>
   
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Arduino interrupt tact switch 예제</title>
-    <link href="http://example.com/2016/10/13/arduino-interrupt-tact-switch/"/>
-    <id>http://example.com/2016/10/13/arduino-interrupt-tact-switch/</id>
+    <link href="https://toollab.github.io/2016/10/13/arduino-interrupt-tact-switch/"/>
+    <id>https://toollab.github.io/2016/10/13/arduino-interrupt-tact-switch/</id>
     <published>2016-10-13T09:18:23.000Z</published>
     <updated>2021-10-09T14:34:20.323Z</updated>
     
@@ -36,17 +36,17 @@
     
     
     
-    <category term="Arduino" scheme="http://example.com/categories/Arduino/"/>
+    <category term="Arduino" scheme="https://toollab.github.io/categories/Arduino/"/>
     
     
-    <category term="Arduino" scheme="http://example.com/tags/Arduino/"/>
+    <category term="Arduino" scheme="https://toollab.github.io/tags/Arduino/"/>
     
   </entry>
   
   <entry>
     <title>Hello, world!</title>
-    <link href="http://example.com/2016/09/11/hello-world/"/>
-    <id>http://example.com/2016/09/11/hello-world/</id>
+    <link href="https://toollab.github.io/2016/09/11/hello-world/"/>
+    <id>https://toollab.github.io/2016/09/11/hello-world/</id>
     <published>2016-09-11T09:03:00.000Z</published>
     <updated>2021-10-09T14:22:43.778Z</updated>
     
@@ -62,10 +62,10 @@
     
     
     
-    <category term="Hexo" scheme="http://example.com/categories/Hexo/"/>
+    <category term="Hexo" scheme="https://toollab.github.io/categories/Hexo/"/>
     
     
-    <category term="Hexo" scheme="http://example.com/tags/Hexo/"/>
+    <category term="Hexo" scheme="https://toollab.github.io/tags/Hexo/"/>
     
   </entry>
   
